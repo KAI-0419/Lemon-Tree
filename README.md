@@ -1,7 +1,5 @@
 # Little Lemon Booking App
 
-This project was developed as part of the Meta Front-End Developer Professional Certificate capstone project.
-
 ## Features
 
 - Booking form for table reservations
