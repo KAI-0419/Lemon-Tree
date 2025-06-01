@@ -58,13 +58,13 @@ const BookingForm = () => {
               <VStack spacing={4} align="stretch">
                 <FormControl isRequired>
                   <FormLabel htmlFor="name">Name</FormLabel>
-                  <Field as={Input} id="name" name="name" placeholder="Kai Lee" />
+                  <Field as={Input} id="name" name="name" placeholder="이강현" />
                   <ErrorMessage name="name" component={Text} color="red.500" fontSize="sm" />
                 </FormControl>
 
                 <FormControl isRequired>
                   <FormLabel htmlFor="email">E-mail</FormLabel>
-                  <Field as={Input} id="email" name="email" type="email" placeholder="Kai0419@email.com" />
+                  <Field as={Input} id="email" name="email" type="email" placeholder="a90605190@gmail.com" />
                   <ErrorMessage name="email" component={Text} color="red.500" fontSize="sm" />
                 </FormControl>
 
