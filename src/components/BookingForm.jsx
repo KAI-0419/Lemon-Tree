@@ -45,7 +45,7 @@ const BookingForm = () => {
     <Container maxW="lg" py={8}>
       <Box borderWidth={1} borderRadius="2xl" p={8} boxShadow="lg" bg="white">
         <Heading as="h2" size="lg" mb={6} textAlign="center" color="teal.600">
-          Little 🍋 Restaurant
+          WKU 학생식당 예약 시스템
         </Heading>
 
         <Formik
