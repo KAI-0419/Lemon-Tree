@@ -7,7 +7,7 @@ function App() {
     <ChakraProvider>
       <Box p={6}>
         <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "1rem", textAlign: "center", color: "#2C5282" }}>
-          Welcome!
+          WKU 학생식당 예약 시스템
         </h1>
         <BookingForm />
       </Box>

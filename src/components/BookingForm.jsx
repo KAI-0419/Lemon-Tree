@@ -45,7 +45,7 @@ const BookingForm = () => {
     <Container maxW="lg" py={8}>
       <Box borderWidth={1} borderRadius="2xl" p={8} boxShadow="lg" bg="white">
         <Heading as="h2" size="lg" mb={6} textAlign="center" color="teal.600">
-          WKU 학생식당 예약 시스템
+          Let's Dig In! 🍽 ️
         </Heading>
 
         <Formik
@@ -64,7 +64,7 @@ const BookingForm = () => {
 
                 <FormControl isRequired>
                   <FormLabel htmlFor="email">E-mail</FormLabel>
-                  <Field as={Input} id="email" name="email" type="email" placeholder="a90605190@gmail.com" />
+                  <Field as={Input} id="email" name="email" type="email" placeholder="a90605190@wku.ac.kr" />
                   <ErrorMessage name="email" component={Text} color="red.500" fontSize="sm" />
                 </FormControl>
 
