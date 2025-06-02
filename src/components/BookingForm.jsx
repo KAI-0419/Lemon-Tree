@@ -13,7 +13,7 @@ import {
   Container,
   Flex,
   Spacer,
-  Divider
+  Divider,
 } from "@chakra-ui/react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { bookingValidationSchema } from "../utils/validationSchema";
@@ -58,38 +58,87 @@ const BookingForm = () => {
               <VStack spacing={4} align="stretch">
                 <FormControl isRequired>
                   <FormLabel htmlFor="name">Name</FormLabel>
-                  <Field as={Input} id="name" name="name" placeholder="이강현" />
-                  <ErrorMessage name="name" component={Text} color="red.500" fontSize="sm" />
+                  <Field
+                    as={Input}
+                    id="name"
+                    name="name"
+                    placeholder="Kai Lee"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component={Text}
+                    color="red.500"
+                    fontSize="sm"
+                  />
                 </FormControl>
 
                 <FormControl isRequired>
                   <FormLabel htmlFor="email">E-mail</FormLabel>
-                  <Field as={Input} id="email" name="email" type="email" placeholder="a90605190@wku.ac.kr" />
-                  <ErrorMessage name="email" component={Text} color="red.500" fontSize="sm" />
+                  <Field
+                    as={Input}
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="a90605190@wku.ac.kr"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component={Text}
+                    color="red.500"
+                    fontSize="sm"
+                  />
                 </FormControl>
 
                 <Flex gap={4}>
                   <FormControl isRequired>
                     <FormLabel htmlFor="date">Reservation Date</FormLabel>
                     <Field as={Input} id="date" name="date" type="date" />
-                    <ErrorMessage name="date" component={Text} color="red.500" fontSize="sm" />
+                    <ErrorMessage
+                      name="date"
+                      component={Text}
+                      color="red.500"
+                      fontSize="sm"
+                    />
                   </FormControl>
 
                   <FormControl isRequired>
                     <FormLabel htmlFor="time">Time</FormLabel>
-                    <Field as={Select} id="time" name="time" placeholder="Pick a time">
+                    <Field
+                      as={Select}
+                      id="time"
+                      name="time"
+                      placeholder="Pick a time"
+                    >
                       <option value="18:00">18:00</option>
                       <option value="19:00">19:00</option>
                       <option value="20:00">20:00</option>
                     </Field>
-                    <ErrorMessage name="time" component={Text} color="red.500" fontSize="sm" />
+                    <ErrorMessage
+                      name="time"
+                      component={Text}
+                      color="red.500"
+                      fontSize="sm"
+                    />
                   </FormControl>
                 </Flex>
 
                 <FormControl isRequired>
                   <FormLabel htmlFor="guests">Numer</FormLabel>
-                  <Field as={Input} id="guests" name="guests" type="number" min="1" max="10" placeholder="1 ~ 10" />
-                  <ErrorMessage name="guests" component={Text} color="red.500" fontSize="sm" />
+                  <Field
+                    as={Input}
+                    id="guests"
+                    name="guests"
+                    type="number"
+                    min="1"
+                    max="10"
+                    placeholder="1 ~ 10"
+                  />
+                  <ErrorMessage
+                    name="guests"
+                    component={Text}
+                    color="red.500"
+                    fontSize="sm"
+                  />
                 </FormControl>
 
                 <Divider my={4} />
@@ -101,6 +150,13 @@ const BookingForm = () => {
                   isLoading={formik.isSubmitting}
                   width="full"
                   borderRadius="full"
+                  isDisabled={!(formik.isValid && formik.dirty)}
+                  _disabled={{
+                    bg: "gray.300",
+                    cursor: "not-allowed",
+                    color: "white",
+                    _hover: { bg: "gray.300" },
+                  }}
                 >
                   Book Now!
                 </Button>
