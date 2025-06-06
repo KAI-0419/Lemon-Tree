@@ -1,4 +1,4 @@
-# Little Lemon Booking App
+# 🍋 Kai's Little Restaurant
 
 ## Features
 
